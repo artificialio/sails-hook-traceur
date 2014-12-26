@@ -1,0 +1,37 @@
+{
+  "name": "sails-hook-traceur",
+  "version": "0.11.0",
+  "description": "Sails JS hook to activate traceur for the whole api folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/runner",
+    "test-all": "node tests/runner all",
+    "autotest": "mocha --watch --reporter spec tests/**/*Test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/artificialio/sails-hook-traceur.git"
+  },
+  "author": "Markus Padourek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artificialio/sails-hook-traceur/issues"
+  },
+  "homepage": "https://github.com/artificialio/sails-hook-traceur",
+  "sails": {
+    "isHook": true
+  },
+  "dependencies": {
+    "traceur": "0.0.79"
+  },
+  "devDependencies": {
+    "glob": "^4.3.2",
+    "mocha": "^2.1.0",
+    "sails": "~0.11.0-rc"
+  },
+  "contributors": [
+    {
+      "name": "Markus Padourek"
+    }
+  ]
+}
