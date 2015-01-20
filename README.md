@@ -1,6 +1,6 @@
 # sails-hook-traceur
 
-* Needs at least Sails version 0.11-rc to work *
+*Needs at least Sails version 0.11-rc to work*
 
 [Sails JS](http://sailsjs.org) hook to activate ES6/7 Javascript code for your whole sails app, via [traceur](https://github.com/google/traceur-compiler).
 
