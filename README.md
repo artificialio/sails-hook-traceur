@@ -1,4 +1,5 @@
 # sails-hook-traceur
+[![npm version](https://badge.fury.io/js/sails-hook-traceur.svg)](https://npmjs.org/package/sails-hook-traceur) [![Dependency Status](https://img.shields.io/david/artificialio/sails-hook-traceur.svg?style=flat)](https://david-dm.org/artificialio/sails-hook-traceur)
 
 *Needs at least Sails version 0.11-rc to work*
 
