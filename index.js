@@ -29,11 +29,14 @@ module.exports = function(sails) {
         sails.log.verbose("Traceur hook deactivated.");
       } else {
 
-        //Load Traceur and override the default require; with async/await on.
+        /**
+         * Load Traceur and override the default require; with async/await on.
+         * Enable inline source maps to be able to debug warnings/errors correctly.
+         */
         require('traceur').require.makeDefault(function(filename) {
           // don't transpile our dependencies, just our app
           return filename.indexOf('node_modules') === -1;
-        }, { asyncFunctions: true });
+        }, { asyncFunctions: true, sourceMaps: 'inline' });
 
         sails.log.verbose("Traceur hook activated. Enjoy ES6/7 power in your Sails app.");
       }
