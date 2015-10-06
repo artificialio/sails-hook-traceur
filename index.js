@@ -22,18 +22,21 @@ module.exports = function(sails) {
      * Initialize the hook
      * @param  {Function} cb Callback for when we're done initializing
      */
-    configure: function() {
+    configure: function() {aa
 
       // If the hook has been deactivated, just return
       if (!sails.config[this.configKey].compile) {
         sails.log.verbose("Traceur hook deactivated.");
       } else {
 
-        //Load Traceur and override the default require; with async/await on.
+        /**
+         * Load Traceur and override the default require; with async/await on.
+         * Enable inline source maps to be able to debug warnings/errors correctly.
+         */
         require('traceur').require.makeDefault(function(filename) {
           // don't transpile our dependencies, just our app
           return filename.indexOf('node_modules') === -1;
-        }, { asyncFunctions: true });
+        }, { asyncFunctions: true, sourceMaps: 'inline' });
 
         sails.log.verbose("Traceur hook activated. Enjoy ES6/7 power in your Sails app.");
       }

@@ -22,7 +22,7 @@
     "isHook": true
   },
   "dependencies": {
-    "traceur": "0.0.81"
+    "traceur": "0.0.90"
   },
   "devDependencies": {
     "glob": "^4.3.2",
