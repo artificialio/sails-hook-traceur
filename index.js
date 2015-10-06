@@ -22,7 +22,7 @@ module.exports = function(sails) {
      * Initialize the hook
      * @param  {Function} cb Callback for when we're done initializing
      */
-    configure: function() {
+    configure: function() {aa
 
       // If the hook has been deactivated, just return
       if (!sails.config[this.configKey].compile) {
